@@ -7,20 +7,21 @@ import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 import Conditional from "./components/Conditional";
 import LearnState from "./components/LearnState";
+import context from "./components/context";
 
 function App() {
-  let sname = "saomya";
-  let age = 50000;
-  let a="ram";
-  function abc(){
-    console.log("Heloooooooo");
-  }
+  // let sname = "saomya";
+  // let age = 50000;
+  // let a="ram";
+  // function abc(){
+  //   console.log("Heloooooooo");
+  // }
 
-  let login=false;
+  // let login=false;
 
-  function handleClick(){
-    console.log("button clicked");
-  }
+  // function handleClick(){
+  //   console.log("button clicked");
+  // }
 
   return (
     <Fragment>
@@ -34,9 +35,12 @@ function App() {
       {/* <Conditional/> */}
       {/* <div>{login?<Navbar/>:<Conditional/>}</div> */}
       {/* <LearnState /> */}
-      <Context.Provider value={'Sai'}>
+
+      <context.Provider value={"Shubham"}>
+        <Navbar />
+      </context.Provider>
     </Fragment>
-  )
+  );
 }
 
 export default App;
