@@ -21,7 +21,14 @@ const LearnUseEffect = () => {
                 {product.map((product) => {
                     return (
                         <div key={product.id}>
+                            <img
+                                src={product.image}
+                                alt={product.title}
+                                width="150"
+                                height="150"
+                            />
                             <h3>{product.title}</h3>
+                            <h4>Price: ${product.price}</h4>
                         </div>
                     );
                 })}
