@@ -9,6 +9,7 @@ import Conditional from "./components/Conditional";
 import LearnState from "./components/LearnState";
 import context from "./components/context";
 import Login from "./components/Login";
+import LearnUseEffect from "./components/LearnUseEffect";
 
 function App() {
   // let sname = "saomya";
@@ -37,9 +38,10 @@ function App() {
       {/* <div>{login?<Navbar/>:<Conditional/>}</div> */}
       {/* <LearnState /> */}
 
-      <context.Provider value={"Shubham"}>
+      {/* <context.Provider value={"Shubham"}>
         <Login />
-      </context.Provider>
+      </context.Provider> */}
+      <LearnUseEffect/>
     </Fragment>
   );
 }
