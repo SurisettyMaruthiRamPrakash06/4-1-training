@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Conditional from "./components/Conditional";
 import LearnState from "./components/LearnState";
 import context from "./components/context";
+import Login from "./components/Login";
 
 function App() {
   // let sname = "saomya";
@@ -37,7 +38,7 @@ function App() {
       {/* <LearnState /> */}
 
       <context.Provider value={"Shubham"}>
-        <Navbar />
+        <Login />
       </context.Provider>
     </Fragment>
   );
